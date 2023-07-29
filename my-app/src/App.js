@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
-function App() {
+function ListItems({ ints, addValue }) {
+  const increment = 3;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <button onClick={() => addValue(increment)}>Add Item</button>
+      {
+        ints?.map(id => {
+          return (
+            <li key={id}>{id}</li>
+          );
+        })
+      }
+    </>
+  );
+}
+
+function App() {
+  const [ints, setInts] = useState([1, 2, 3]);
+
+  function addValue(incrementValue) {
+    const newVal = Math.max(...ints) + incrementValue;
+    setInts([...ints, newVal]);
+  }
+
+  return (
+    <ul>
+      <ListItems ints={ints} addValue={addValue} />
+    </ul>
   );
 }
 
