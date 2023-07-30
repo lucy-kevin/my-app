@@ -20,7 +20,7 @@ function ListItems({ints, addValues}){
   }
 function App() {
  // const ints = [1,2,3];
- const[ints, setInts] = useState([1,2,3]);
+ const[ints, setInts] = useState([1,2,3,4,5]);
   function addValues(incrementValue){
     const newVal = Math.max(...ints) + incrementValue;
     setInts([...ints,newVal]);
