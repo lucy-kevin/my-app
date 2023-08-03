@@ -13,7 +13,7 @@ function App(){
       setAllHouses(houses);
       
     };
-    fetchHouse();
+    fetchHouses();
   },[]);
   //load data
   let featuredHouse ={};
