@@ -6,7 +6,7 @@ const HouseFromQuery = ({ allHouses}) =>{
     const house = allHouse.find((h)=> h.id === parseInt(id));
 
     if(!house )return<div>House not found.</div>;
-    return<House house ={house}></House>
+    return<House house ={house}></Hous>
 }
 
 export default HouseFromQuery;
