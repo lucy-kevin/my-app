@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "address":"12 Valley of Kings, Geneva",
+        "country":"Switzerland",
+        "description":"A superb detached Victorian Property on one of the hills",
+        "price": 900000,
+        "photo":"5744546"
+    },
+    {
+        "id":2,
+        "address":"9 Road of Forks, Bern",
+        "country":"Switzerland",
+        "description":"A superb detached Victorian Property on one of the hills",
+        "price": 600000,
+        "photo":"8797546"
+    },
+    {
+        "id":3,
+        "address":"9 Valley of Kings, Geneva",
+        "country":"Switzerland",
+        "description":"A superb detached Victorian Property on one of the hills",
+        "price": 9000000,
+        "photo":"7654546"
+    }
+
+]
