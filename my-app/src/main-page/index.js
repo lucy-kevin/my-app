@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import FeaturedHouse from './featured-house';
 import SearchResults from '../search-results';
 import HouseFilter from './house-filter';
-import house from './houses.json';
+import HouseFromQuery from '../house/HouseFromQuery';
 
 function App(){
   const [allHouses, setAllHouses] = useState([]);
