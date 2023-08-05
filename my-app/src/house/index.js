@@ -1,6 +1,6 @@
 import "./house.css";
 import { useState } from "react";
-import emailIcon from "./email";
+import emailIcon from "./email.png";
 import Inquiry from "./inquiry";
 
 const House = ({house}) => {
@@ -25,6 +25,13 @@ const House = ({house}) => {
                 <p className="price">${house.price}</p>
                 <p>{house.description}</p>
                 
+                <img 
+                src={emailIcon}
+                height="50"
+                alt = "inquiry"
+                onClick={inquiryClick}
+                />
+                {InquiryShown && <Inquiry house = {house}/>}
                 </div>
             </div>
             
